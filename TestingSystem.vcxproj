@@ -109,6 +109,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,8 +155,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="logic\category.cpp" />
+    <ClCompile Include="logic\category_logic.cpp" />
+    <ClCompile Include="logic\key_detector.cpp" />
+    <ClCompile Include="logic\log_in_logic.cpp" />
     <ClCompile Include="logic\log_on_logic.cpp" />
     <ClCompile Include="logic\passed_test.cpp" />
+    <ClCompile Include="logic\question.cpp" />
+    <ClCompile Include="logic\question_answer.cpp" />
     <ClCompile Include="logic\sha1.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -232,24 +239,52 @@
       <AdditionalIncludeDirectories>;C:\src\vcpkg\vcpkg\installed\x64-windows\include</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="logic\stopped_test.cpp" />
+    <ClCompile Include="logic\stopped_test_logic.cpp" />
+    <ClCompile Include="logic\test.cpp" />
+    <ClCompile Include="logic\test_logic.cpp" />
     <ClCompile Include="logic\user.cpp" />
+    <ClCompile Include="pages\categories_page.cpp" />
     <ClCompile Include="pages\entrance_page.cpp" />
     <ClCompile Include="pages\log_in_page.cpp" />
     <ClCompile Include="pages\log_on_page.cpp" />
+    <ClCompile Include="pages\main_user_page.cpp" />
+    <ClCompile Include="pages\passed_tests_page.cpp" />
+    <ClCompile Include="pages\stopped_test_page.cpp" />
+    <ClCompile Include="pages\test_page.cpp" />
+    <ClCompile Include="pages\tests_page.cpp" />
     <ClCompile Include="TestingSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="logic\category.h" />
+    <ClInclude Include="logic\category_logic.h" />
+    <ClInclude Include="logic\key_detector.h" />
+    <ClInclude Include="logic\log_in_logic.h" />
     <ClInclude Include="logic\log_on_logic.h" />
     <ClInclude Include="logic\passed_test.h" />
+    <ClInclude Include="logic\question.h" />
+    <ClInclude Include="logic\question_answer.h" />
     <ClInclude Include="logic\sha1.hpp" />
     <ClInclude Include="logic\stopped_test.h" />
+    <ClInclude Include="logic\stopped_test_logic.h" />
+    <ClInclude Include="logic\test.h" />
+    <ClInclude Include="logic\test_logic.h" />
     <ClInclude Include="logic\user.h" />
+    <ClInclude Include="pages\categories_page.h" />
     <ClInclude Include="pages\entrance_page.h" />
     <ClInclude Include="pages\log_in_page.h" />
     <ClInclude Include="pages\log_on_page.h" />
+    <ClInclude Include="pages\main_user_page.h" />
+    <ClInclude Include="pages\passed_tests_page.h" />
+    <ClInclude Include="pages\stopped_test_page.h" />
+    <ClInclude Include="pages\test_page.h" />
+    <ClInclude Include="pages\tests_page.h" />
+    <ClInclude Include="single_include\nlohmann\json.hpp" />
+    <ClInclude Include="single_include\nlohmann\json_fwd.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\users.txt" />
+    <Content Include="data_base\test.json" />
+    <Content Include="data_base\tests.json" />
+    <Content Include="data_base\users.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

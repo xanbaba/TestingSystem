@@ -1,22 +1,15 @@
-#include <iostream>
-
 #include "pages/entrance_page.h"
-#include "pages/log_in_page.h"
-#include "pages/log_on_page.h"
-#include "logic/sha1.hpp"
+#include "pages/main_user_page.h"
 
 int main(int argc, char* argv[])
 {
-    entrance_page page_entrance_page;
-    int entrance_page_choice = page_entrance_page.show_page();
-    if (entrance_page_choice == 0)
+    auto base_user = entrance_page::load_user();
+    if (base_user.get_is_admin())
     {
-        log_in_page::show_page();
     }
-     else if (entrance_page_choice == 1)
+    else
     {
-        log_on_page::show_page();
+        main_user_page::show_page(base_user);
     }
-    std::cin.get();
     return 0;
 }

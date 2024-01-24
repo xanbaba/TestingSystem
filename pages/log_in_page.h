@@ -1,7 +1,8 @@
 ﻿#pragma once
+#include "../logic/user.h"
 
 class log_in_page
 {
 public:
-    static void show_page();
+    static user show_page();
 };

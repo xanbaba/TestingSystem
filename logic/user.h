@@ -8,30 +8,32 @@
 class user
 {
 public:
+    // constructors
+    user();
     user(const std::string& a_login,
          const std::string& a_password,
          const std::string& a_fio,
          const std::string& a_phone_number,
-         const std::vector<passed_test>& a_passed_tests,
-         const std::vector<stopped_test>& a_stopped_tests,
-         bool a_is_admin)
-    {
-        login = a_login;
-        password = a_password;
-        fio = a_fio;
-        phone_number = a_phone_number;
-        passed_tests = a_passed_tests;
-        stopped_tests = a_stopped_tests;
-        is_admin = a_is_admin;
-        
-    }
+         bool a_is_admin,
+         const std::vector<passed_test>& a_passed_tests = {},
+         const std::vector<stopped_test>& a_stopped_tests = {});
 
+    // getters
+    const std::string& get_login();
+    const std::string& get_password();
+    const std::string& get_fio();
+    const std::string& get_phone_number();
+    bool get_is_admin();
+    std::vector<passed_test>& get_passed_tests();
+    std::vector<stopped_test>& get_stopped_tests();
+
+private:
     std::string login,
                 password,
                 fio,
                 phone_number;
 
+    bool is_admin;
     std::vector<passed_test> passed_tests;
     std::vector<stopped_test> stopped_tests;
-    bool is_admin;
 };

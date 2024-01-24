@@ -2,12 +2,35 @@
 #include <conio.h>
 #include <iostream>
 
+#include "log_in_page.h"
+#include "log_on_page.h"
+
+user entrance_page::load_user()
+{
+    entrance_page page_entrance_page;
+    const int entrance_page_choice = page_entrance_page.show_page();
+
+    user entered_user;
+    
+    if (entrance_page_choice == 0)
+    {
+        entered_user = log_in_page::show_page();
+    }
+    else if (entrance_page_choice == 1)
+    {
+        log_on_page::show_page();
+        entered_user = log_in_page::show_page();
+    }
+
+    return entered_user;
+}
+
 int entrance_page::show_page()
 {
     render_page();
     while (true)
     {
-        auto button = key_detector();
+        auto button = key_detector::detect();
         if (button == key::enter)
         {
             system("cls");
@@ -42,22 +65,6 @@ void entrance_page::render_page()
         }
         std::cout << '\n';
     }
-}
-
-key entrance_page::key_detector()
-{
-    if (_kbhit())
-    {
-        key button = static_cast<key>(_getch());
-        switch (button) {
-        case key::none:
-        case key::up:
-        case key::down:
-        case key::enter:
-            return button;
-        }
-    }
-    return key::none;
 }
 
 void entrance_page::set_current_field(key button)
