@@ -243,15 +243,18 @@
     <ClCompile Include="logic\test.cpp" />
     <ClCompile Include="logic\test_logic.cpp" />
     <ClCompile Include="logic\user.cpp" />
+    <ClCompile Include="logic\users_management_logic.cpp" />
     <ClCompile Include="pages\categories_page.cpp" />
     <ClCompile Include="pages\entrance_page.cpp" />
     <ClCompile Include="pages\log_in_page.cpp" />
     <ClCompile Include="pages\log_on_page.cpp" />
+    <ClCompile Include="pages\main_admin_page.cpp" />
     <ClCompile Include="pages\main_user_page.cpp" />
     <ClCompile Include="pages\passed_tests_page.cpp" />
     <ClCompile Include="pages\stopped_test_page.cpp" />
     <ClCompile Include="pages\test_page.cpp" />
     <ClCompile Include="pages\tests_page.cpp" />
+    <ClCompile Include="pages\users_management_page.cpp" />
     <ClCompile Include="TestingSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -269,20 +272,22 @@
     <ClInclude Include="logic\test.h" />
     <ClInclude Include="logic\test_logic.h" />
     <ClInclude Include="logic\user.h" />
+    <ClInclude Include="logic\users_management_logic.h" />
     <ClInclude Include="pages\categories_page.h" />
     <ClInclude Include="pages\entrance_page.h" />
     <ClInclude Include="pages\log_in_page.h" />
     <ClInclude Include="pages\log_on_page.h" />
+    <ClInclude Include="pages\main_admin_page.h" />
     <ClInclude Include="pages\main_user_page.h" />
     <ClInclude Include="pages\passed_tests_page.h" />
     <ClInclude Include="pages\stopped_test_page.h" />
     <ClInclude Include="pages\test_page.h" />
     <ClInclude Include="pages\tests_page.h" />
+    <ClInclude Include="pages\users_management_page.h" />
     <ClInclude Include="single_include\nlohmann\json.hpp" />
     <ClInclude Include="single_include\nlohmann\json_fwd.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data_base\test.json" />
     <Content Include="data_base\tests.json" />
     <Content Include="data_base\users.json" />
   </ItemGroup>

@@ -5,68 +5,29 @@
     "login": "xanbaba",
     "passed_tests": [],
     "password": "58ad38d9dd590de610163204ab24ebba843f19f7",
-    "phone_number": "0557271205",
-    "stopped_tests": []
-  },
-  {
-    "fio": "Aleksey Skiba Aleksey",
-    "is_admin": false,
-    "login": "Alex",
-    "passed_tests": [
-      {
-        "score": 9,
-        "test_name": "Arithmetics"
-      },
-      {
-        "score": 9,
-        "test_name": "Arithmetics"
-      },
-      {
-        "score": 12,
-        "test_name": "Arithmetics"
-      },
-      {
-        "score": 12,
-        "test_name": "Arithmetics"
-      },
-      {
-        "score": 12,
-        "test_name": "Arithmetics"
-      },
-      {
-        "score": 3,
-        "test_name": "Arithmetics"
-      }
-    ],
-    "password": "3803e834247459e5e09a888b1ed96b03f4332e03",
-    "phone_number": "0501234567",
-    "stopped_tests": []
-  },
-  {
-    "fio": "Skubi Dubi Du",
-    "is_admin": false,
-    "login": "SkubiDu",
-    "passed_tests": [],
-    "password": "f90c631eaa36a1fbe96a5c82be9d8ce3bd062d94",
-    "phone_number": "0558761234",
-    "stopped_tests": []
-  },
-  {
-    "fio": "Pup PUP POP",
-    "is_admin": false,
-    "login": "Pupsik",
-    "passed_tests": [],
-    "password": "55e288ce8175dd58907cd50ace61184a86d05eab",
-    "phone_number": "0176838384",
+    "phone_number": "+994557271205",
     "stopped_tests": []
   },
   {
     "fio": "Fidan Fatullayeva Fikret",
     "is_admin": false,
     "login": "fidan",
-    "passed_tests": [],
-    "password": "7ba94e99b24451c2f66a4d851200fb99816533b9",
-    "phone_number": "0552340123",
+    "passed_tests": [
+      {
+        "score": 12,
+        "test_name": "Arithmetics"
+      },
+      {
+        "score": 0,
+        "test_name": "Grammar Advanced"
+      },
+      {
+        "score": 12,
+        "test_name": "Grammar Advanced"
+      }
+    ],
+    "password": "336566f6c41c8c57086f36dd4675f9f8280dd319",
+    "phone_number": "+9941129832",
     "stopped_tests": []
   }
 ]
